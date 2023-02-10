@@ -3872,7 +3872,7 @@ class Chatbot(Changeable, IOComponent, JSONSerializable):
         """
         Parameters:
             value: Default value to show in chatbot. If callable, the function will be called whenever the app loads to set the initial value of the component.
-            starts_with: Determines whether the chatbot starts with a user message or a bot message. Must be either "user" or "bot". Default is "user".
+            starts_with: Determines whether the chatbot starts with a user message (appearing on the right) or a bot message (appearing on the left). Must be either "user" or "bot". Default is "user".
             label: component name in interface.
             every: If `value` is a callable, run the function 'every' number of seconds while the client connection is open. Has no effect otherwise. Queue must be enabled. The event can be accessed (e.g. to cancel it) via this component's .load_event attribute.
             show_label: if True, will display label.
